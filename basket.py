@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 import cvxpy as cp
 
 
-def hedge_basket_universe(timestamp):
+def hedge_basket_universe():
     hyperliquid = ccxt.hyperliquid()
     markets = hyperliquid.load_markets()
 
