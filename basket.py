@@ -33,7 +33,7 @@ def hedge_basket_universe():
             }
             symbol_info['openInterestUsd'] = symbol_info['openInterest'] * symbol_info['midPx']
             info[symbol.replace('/USDC:USDC', '')] = symbol_info
-        
+         
     df = pd.DataFrame(info).T.sort_values('dayNtlVlm', ascending=False)
     return df
 
